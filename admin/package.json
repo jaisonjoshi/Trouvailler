@@ -1,11 +1,12 @@
 {
-  "proxy":"http://localhost:4040/api/",
+  "proxy": "http://localhost:4040/api/",
   "name": "admin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.13",
     "@mui/styled-engine-sc": "^5.10.6",
     "@mui/x-data-grid": "^5.17.10",
