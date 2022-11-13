@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import DataTable from '../../components/dataTable/Dtatable';
 import Navbar from '../../components/navbar/Navbar';
 import Sidenav from '../../components/sidenav/Sidenav';
@@ -11,6 +12,9 @@ const Userlist =() => {
             <Sidenav />
 
             <div className="userlist-body">
+                <div>
+                    <Link to="/users/newuser"> Add a new user</Link>
+                </div>
                 <DataTable />
             </div>
 

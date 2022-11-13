@@ -18,9 +18,11 @@ const Sidenav = () => {
                 <li>
                     <a href="">Bids</a>
                 </li>
+                <Link to="/packages">
                 <li>
-                    <a href="">packages</a>
+                    <span>Packages</span>
                 </li>
+                </Link>
                 <li>
                     <a href="">reviews</a>
                 </li>
