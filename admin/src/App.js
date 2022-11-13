@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Userlist from './pages/userList/Userlist';
 import Vendorlist from './pages/vendorlist/Vendorlist';
 import SingleUser from './pages/single/singleUser/SingleUser';
+import Newuser from './pages/new/newuser/Newuser';
+import Packages from './pages/packages/Packages';
+import NewPacakge from './pages/new/newPackage/NewPackage';
 
 
 
@@ -20,10 +23,16 @@ function App() {
           <Route index element={<Home />} />
           <Route path="users">
             <Route index element={<Userlist />} />
-            <Route path='userid' element={<SingleUser />} />
+            <Route path=':userid' element={<SingleUser />} />
+            <Route path='newuser' element={<Newuser />} />
+
           </Route>
           <Route path="Vendors">
             <Route index element={<Vendorlist />} />
+          </Route>
+          <Route path="packages">
+            <Route index element={<Packages />} />
+            <Route path='newpackage' element={<NewPacakge />} />
           </Route>
         </Route>
       

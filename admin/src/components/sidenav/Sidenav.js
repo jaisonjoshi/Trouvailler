@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom';
 import './sidenav.scss';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import AddBusinessIcon from '@mui/icons-material/AddBusiness';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import ReviewsIcon from '@mui/icons-material/Reviews';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import RequestPageIcon from '@mui/icons-material/RequestPage';
 
 const Sidenav = () => {
     return(
@@ -7,26 +13,34 @@ const Sidenav = () => {
             <ul>
                 <Link to="/users">
                 <li>
-                    <span >Users</span>
+                    <PeopleAltIcon className='sidenav-icn'/><span >Users</span>
                 </li>
                 </Link>
                 <Link to="/vendors">
                 <li>
-                    <span>Vendors</span>
+                    <AddBusinessIcon className='sidenav-icn'/><span>Vendors</span>
                 </li>
                 </Link>
+                <Link>
+                    <li>
+                        <RequestPageIcon className='sidenav-icn'/><span>Bids</span>
+                    </li>
+                </Link>
+                <Link to="/packages">
                 <li>
-                    <a href="">Bids</a>
+                   <TravelExploreIcon className='sidenav-icn'/> <span>Packages</span>
                 </li>
-                <li>
-                    <a href="">packages</a>
-                </li>
-                <li>
-                    <a href="">reviews</a>
-                </li>
-                <li>
-                    <a href="">offers</a>
-                </li>
+                </Link>
+                <Link>
+                    <li>
+                        <ReviewsIcon className='sidenav-icn'/><span>Reviews</span>
+                    </li>
+                </Link>
+                <Link>
+                    <li>
+                        <LocalOfferIcon className='sidenav-icn'/><span>Offers</span>
+                    </li>
+                </Link>
             </ul>
         </div>
     )
