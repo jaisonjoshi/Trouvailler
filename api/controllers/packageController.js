@@ -13,7 +13,7 @@ const getPackage = async(req,res)=>{
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({error:'No such package exists'})
     }
-    const hotel=await Package.findById(id)
+    const package=await Package.findById(id)
     if(!package){
         return res.status(404).json({error:'No such package found'})
     }

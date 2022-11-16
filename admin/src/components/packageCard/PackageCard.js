@@ -2,11 +2,17 @@ import './packageCard.scss'
 import packageimg from '../assets/package.png';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import { useNavigate } from 'react-router-dom';
 
 
 const PackageCard = ({pack}) => {
+    const navigate = useNavigate()
+    const handlepackagecardclick = () => {
+        navigate(`/packages/${pack._id}`)
+    }
+
     return(
-        <div className="package-card">
+        <div className="package-card" onClick={handlepackagecardclick}>
             <div className="package-card-img">
                 <img src={packageimg} alt="" />
             </div>
